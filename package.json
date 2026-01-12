@@ -1,22 +1,23 @@
 {
-  "name": "deepl_api",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node --watch src/index.js",
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@eslint/js": "^9.8.0",
-    "eslint": "^9.8.0",
-    "globals": "^15.8.0"
-  },
-  "dependencies": {
-    "express": "4.19.2"
-  }
+	"name": "deepl_api",
+	"version": "1.0.1",
+	"main": "index.js",
+	"scripts": {
+		"dev": "node --watch src/index.js",
+		"start": "node src/index.js",
+		"build": "npx esbuild src/index.js --bundle --platform=node --minify --outfile=dist/index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@eslint/js": "^9.8.0",
+		"eslint": "^9.8.0",
+		"globals": "^15.8.0"
+	},
+	"dependencies": {
+		"esbuild": "^0.27.2",
+		"express": "4.19.2"
+	}
 }
